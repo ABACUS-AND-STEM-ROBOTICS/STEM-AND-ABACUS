@@ -1,0 +1,389 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(120deg, #f7f8fa 70%, #e6f7ee 100%);
+    color: #222;
+}
+
+header {
+    background: linear-gradient(90deg, #006B3C 0%, #009e5c 100%);
+    color: white;
+    padding: 2em 0 1em 0;
+    box-shadow: 0 4px 24px rgba(0,107,60,0.13);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+header .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 18px;
+}
+
+.logo {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    background: #fff;
+    margin-bottom: 0;
+    border: 2px solid #009e5c;
+    transition: transform 0.3s cubic-bezier(.55,-0.42,0,1.19);
+}
+.logo:hover {
+    transform: scale(1.08) rotate(-3deg);
+    box-shadow: 0 8px 24px rgba(0,107,60,0.18);
+}
+
+.company-name {
+    text-align: center;
+    margin: 0;
+    font-size: 3.1rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 16px rgba(0,0,0,0.11);
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 1em;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-shadow: 0 1px 8px rgba(0,107,60,0.08);
+}
+
+.intro-text {
+    text-align: left;
+    max-width: 850px;
+    margin: 0 auto 20px auto;
+    background: rgba(255,255,255,0.13);
+    border-radius: 15px;
+    padding: 24px 32px;
+    box-shadow: 0 4px 24px rgba(0,107,60,0.09);
+    font-size: 1.08em;
+}
+
+.intro, .intro2 {
+    text-align: left;
+    margin-bottom: 12px;
+    line-height: 1.8;
+}
+
+nav {
+    margin-top: 1.2em;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 14px;
+    font-weight: bold;
+    padding: 0.7em 1.3em;
+    border-radius: 24px;
+    transition: background 0.22s, color 0.22s, box-shadow 0.22s;
+    box-shadow: 0 2px 8px rgba(0,107,60,0.09);
+    font-size: 1.15em;
+    border: 1.5px solid transparent;
+}
+nav a:hover, nav a:focus {
+    background: #00512e;
+    color: #ffd700;
+    box-shadow: 0 4px 18px rgba(0,107,60,0.16);
+    border: 1.5px solid #ffd700;
+}
+
+main {
+    max-width: 1100px;
+    margin: 2em auto;
+    padding: 1em 20px;
+}
+
+/* Section Headings */
+section h2 {
+    text-align: center;
+    color: #006B3C;
+    font-size: 2.1em;
+    margin-bottom: 1em;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    text-shadow: 0 1px 10px rgba(0,107,60,0.06);
+}
+
+/* Button Styles */
+.btn, button, input[type="submit"] {
+    display: inline-block;
+    background: linear-gradient(90deg, #006B3C 0%, #009e5c 100%);
+    color: white;
+    padding: 0.9em 2.2em;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1em;
+    transition: background 0.22s, color 0.22s, box-shadow 0.22s, transform 0.18s;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,107,60,0.10);
+    cursor: pointer;
+    font-size: 1.09em;
+    letter-spacing: .5px;
+}
+.btn:hover, button:hover, input[type="submit"]:hover {
+    background: #00512e;
+    color: #ffd700;
+    box-shadow: 0 8px 32px rgba(0,107,60,0.13);
+    transform: scale(1.04);
+}
+
+/* Card/Section Styles */
+.events-upload, .contact-info, .register, .faq-list, .partners, .resources {
+    background: #fff;
+    padding: 2em 1.5em;
+    border-radius: 18px;
+    box-shadow: 0 2px 24px rgba(0,107,60,0.07);
+    margin-bottom: 2.3em;
+}
+
+.event-list {
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.event-item {
+    background: #f1f8f4;
+    border-radius: 16px;
+    box-shadow: 0 4px 18px rgba(0,107,60,0.06);
+    padding: 1.2em;
+    min-width: 270px;
+    max-width: 320px;
+    margin-bottom: 1em;
+    text-align: left;
+    transition: box-shadow 0.2s, transform 0.15s;
+}
+.event-item:hover {
+    box-shadow: 0 8px 32px rgba(0,107,60,0.14);
+    transform: translateY(-3px) scale(1.03);
+}
+
+.event-item img {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 12px;
+    box-shadow: 0 2px 10px rgba(0,107,60,0.10);
+}
+
+.gallery-grid {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1.2em;
+}
+
+.gallery-grid img, .gallery-grid video {
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 2px 16px rgba(0,107,60,0.13);
+    background: #fff;
+    border: 1.5px solid #e6f7ee;
+    transition: box-shadow 0.16s, transform 0.15s;
+}
+.gallery-grid img:hover, .gallery-grid video:hover {
+    box-shadow: 0 8px 32px rgba(0,107,60,0.17);
+    transform: scale(1.04);
+}
+
+/* Registration & Contact Forms */
+form {
+    display: grid;
+    gap: 1.2em;
+    margin: 0 auto;
+    max-width: 420px;
+}
+
+form input, form select, form textarea {
+    padding: 0.9em;
+    border-radius: 8px;
+    border: 1.6px solid #cceee0;
+    font-size: 1.07em;
+    font-family: inherit;
+    background: #f7f8fa;
+    transition: border 0.16s, box-shadow 0.16s;
+}
+form input:focus, form select:focus, form textarea:focus {
+    outline: 2px solid #006B3C;
+    border-color: #009e5c;
+    box-shadow: 0 2px 16px rgba(0,107,60,0.10);
+}
+
+form button {
+    margin-top: 0.7em;
+}
+
+#registration-form-status, #my-form-status {
+    text-align: center;
+    font-size: 1.05em;
+    color: #006B3C;
+    font-weight: 600;
+    margin-top: 0.5em;
+}
+
+/* Blog and FAQ Cards */
+.blog-list, .faq-list, .partner-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.blog-item, .faq-item {
+    background: #eef4ed;
+    padding: 1.2em 1.6em;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,107,60,0.07);
+    min-width: 220px;
+    max-width: 350px;
+    transition: box-shadow 0.2s, transform 0.14s;
+}
+.blog-item:hover, .faq-item:hover {
+    box-shadow: 0 8px 32px rgba(0,107,60,0.15);
+    transform: scale(1.03);
+}
+
+.blog-item h3, .faq-item h3 {
+    margin-top: 0;
+    color: #009e5c;
+}
+
+.blog-item a {
+    color: #006B3C;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.partner-list img {
+    width: 120px;
+    height: 80px;
+    object-fit: contain;
+    margin: 10px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(0,107,60,0.08);
+    border: 1px solid #e6f7ee;
+    transition: box-shadow 0.2s, transform 0.13s;
+}
+.partner-list img:hover {
+    box-shadow: 0 6px 24px rgba(0,107,60,0.15);
+    transform: scale(1.06);
+}
+
+/* Contact info section styling */
+.contact-info {
+    text-align: center;
+}
+.contact-info h2 {
+    color: #006B3C;
+    margin-top: 0;
+}
+.contact-info a {
+    color: #006B3C;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contact-info .social-icon {
+    margin: 0 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.contact-info .gmail { color: #D44638; }
+.contact-info .facebook { color: #1877F3; }
+.contact-info .instagram { color: #E4405F; }
+.contact-info .twitter { color: #1DA1F2; }
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 2em 0 1em 0;
+    margin-top: 2em;
+    box-shadow: 0 -2px 16px rgba(0,107,60,0.08);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+footer .social-icon.gmail { color: #ff8787; }
+footer .social-icon.facebook { color: #81afeb; }
+footer .social-icon.instagram { color: #c9344f; }
+footer .social-icon.twitter { color: #1d93dd; }
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    header .container,
+    main {
+        max-width: 98vw;
+        padding: 0 8px;
+    }
+    .header-flex {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .company-name {
+        font-size: 2rem;
+    }
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+    .event-list, .gallery-grid, .blog-list, .faq-list, .partner-list {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .intro-text {
+        padding: 10px 8px;
+    }
+    .partner-list img {
+        width: 90vw;
+        height: 60px;
+    }
+}
+
+@media (max-width: 500px) {
+    .company-name {
+        font-size: 1.2rem;
+    }
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+    section h2 {
+        font-size: 1.1em;
+    }
+    .event-item, .blog-item, .faq-item {
+        min-width: 90vw;
+        max-width: 98vw;
+    }
+    .intro-text {
+        padding: 8px 4px;
+    }
+    .partner-list img {
+        width: 96vw;
+        height: 48px;
+    }
+}
